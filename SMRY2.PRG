@@ -1,0 +1,15 @@
+CLEA
+CLEA ALL
+CLOSE ALL
+
+SELECT 1
+USE FinSmry
+
+SELECT 2
+USE Rplc ORDER sht
+
+SELECT FinSmry
+SET RELATION TO sht+str(sc) INTO Rplc ADDITIVE
+
+REPLACE ALL Rplc WITH Rplc.rplc
+
